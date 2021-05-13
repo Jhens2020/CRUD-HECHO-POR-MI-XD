@@ -1,0 +1,48 @@
+<br>
+<div class="container">
+        <form [formGroup]="clienteForm" (ngSubmit)="save()">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">Nombre :</label>
+                      <input  type="text" formControlName="nombre" name="nombre" id="nombre" required placeholder="Nombre" class="form-control"  aria-describedby="emailHelp" >
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">Apellido Materno</label>
+                      <input type="text" formControlName="apellido" name="apellido" id="apellido" required placeholder="Apellido Materno" class="form-control"  aria-describedby="emailHelp" >
+                    </div>
+                    <div class="col-6">
+                      <label for="exampleInputEmail1">Apellido Paterno</label>
+                    <input type="text" formControlName="apellidoP" name="apellidop" id="apellidop" required placeholder="Apellido Paterno" class="form-control"  aria-describedby="emailHelp" >
+                  </div>
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">Numero de DNI</label>
+                      <input  type="number" formControlName="telefono" name="telefono" id="telefono" required placeholder="Numero de DNI"required  class="form-control"  aria-describedby="emailHelp" >
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">DIRECCION</label>
+                      <input type="text" formControlName="direccion" name="direccion" id="direccion" required placeholder="DIRECCION" required  class="form-control"  aria-describedby="emailHelp" >
+                    </div>
+                    <div class="col-6">
+                      <label for="exampleInputEmail1">Lugar de nacimiento</label>
+                    <input type="text" formControlName="direccion" name="direccion" id="direccion" required placeholder="LUGAR DE NACIMIENTO" required  class="form-control"  aria-describedby="emailHelp" >
+                  </div>
+                  <div class="col-6">
+                    <label for="exampleInputEmail1">sexo</label>
+                  <input type="text" formControlName="direccion" name="direccion" id="direccion" required placeholder="MASCULINO O FEMENINO" required  class="form-control"  aria-describedby="emailHelp" >
+                </div>
+                  </div>
+            </div>
+                <br>
+                <button type="submit" [disabled]="!clienteForm.valid" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        Save
+                      </button>
+            </form> 
+</div>
+
+      
+    
+
+        
+          
+      
